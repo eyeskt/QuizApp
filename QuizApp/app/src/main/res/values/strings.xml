@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <!-- activity_main.xml for QuestionNumber, Question, Answer, submit button  -->
+    <string name="question_1_number"> Question 1</string>
+    <string name="question_2_number"> Question 2</string>
+    <string name="question_3_number"> Question 3</string>
+    <string name="question_4_number"> Question 4</string>
+
+    <string name="question_1"> What is the best brand coffee to drink? </string>
+
+    <string name="question_2"> What kind of coffee contains mike? </string>
+    <string name="Question2_Answer1"> Latte </string>
+    <string name="Question2_Answer2"> Cappuccino </string>
+    <string name="Question2_Answer3"> Espresso </string>
+
+    <string name="question_3"> Do you know the Latte combination? </string>
+    <string name="Question3_Answer1"> 2/3 Mike + 1/3 Expresso </string>
+    <string name="Question3_Answer2"> 1/3 Mike + 2/3 Expresso </string>
+    <string name="Question3_Answer3"> 1/2 Mike + 1/2 Expresso </string>
+
+    <string name="question_4"> Do you know the Cappuccino combination? </string>
+    <string name="Question4_Answer1"> 2/3 Mike + 1/3 Expresso </string>
+    <string name="Question4_Answer2"> 1/3 Mike + 2/3 Expresso </string>
+    <string name="Question4_Answer3"> 1/2 Mike + 1/2 Expresso </string>
+
+    <!-- activity_main.xml for submit button  -->
+    <string name="submit"> Submit </string>
+
+</resources>
