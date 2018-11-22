@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int correctAnswerNumber = 0;
+    private int correctAnswerNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         submit.setOnClickListener(submitButtonOnClickListener);
     }
 
-    private String CheckQuestion1Answer() {
+    private void CheckQuestion1Answer() {
         EditText editText = (EditText) findViewById(R.id.question_1_edittext);
-        String Question1Answer = editText.getText().toString();
-        correctAnswerNumber += 1;
-        return Question1Answer;
+        String editStringText = editText.getText().toString();
+        boolean Question1Answer = editStringText.equalsIgnoreCase("Latte");
+        if (Question1Answer) {
+            correctAnswerNumber += 1;
+        }
     }
 
     private void CheckQuestion2Answer() {
@@ -70,8 +72,15 @@ public class MainActivity extends AppCompatActivity {
             CheckQuestion2Answer();
             CheckQuestion3Answer();
             CheckQuestion4Answer();
-            Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswerNumber + "/4",
-                    Toast.LENGTH_LONG).show();
+            if (correctAnswerNumber > 0) {
+                //Well done, the score = 1/4!
+                Toast.makeText(MainActivity.this, "Well done, correct Answers: " + correctAnswerNumber + "/4",
+                        Toast.LENGTH_LONG).show();
+            } else {
+                //Try again, the score = 0/4!
+                Toast.makeText(MainActivity.this, "Try again, correct Answers: " + correctAnswerNumber + "/4",
+                        Toast.LENGTH_LONG).show();
+            }
             resetCorrectAnswers();
         }
     };
