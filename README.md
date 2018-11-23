@@ -1,4 +1,5 @@
 # QuizApp
+- Quiz app for udacity Android basics
 
-Quiz app for udacity Android basics
-![Screenshot](Screenshots.png)
+# Screenshot
+<img src="https://github.com/eyeskt/QuizApp/blob/master/screenshots.png" width="300"/>
